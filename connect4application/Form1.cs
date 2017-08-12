@@ -55,6 +55,14 @@ namespace connect4application
                     Application.Exit();
                 }
             }
+            // check for a draw
+            if (!g.moreMoves())
+            {
+                if (MessageBox.Show("It's a draw!", "Connect4", MessageBoxButtons.OK) == DialogResult.OK)
+                {
+                    Application.Exit();
+                }
+            }
             //do computers move
             g.move(g.getCompMove(), Game.computer);
             label2.Visible = true;
@@ -66,6 +74,14 @@ namespace connect4application
             if (g.getWin())
             {
                 if (MessageBox.Show("You lost!", "Connect4", MessageBoxButtons.OK) == DialogResult.OK)
+                {
+                    Application.Exit();
+                }
+            }
+            //check for a draw
+            if (!g.moreMoves())
+            {
+                if (MessageBox.Show("It's a draw!", "Connect4", MessageBoxButtons.OK) == DialogResult.OK)
                 {
                     Application.Exit();
                 }
