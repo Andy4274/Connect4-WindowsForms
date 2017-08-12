@@ -32,9 +32,9 @@ namespace connect4application
             playHereButtons[5] = column6B;
             playHereButtons[6] = column7B;
             wireMap();
-            player = Image.FromFile(@"c:\users\andy4\documents\visual studio 2017\Projects\connect4application\player.bmp");
-            computer = Image.FromFile(@"c:\users\andy4\documents\visual studio 2017\Projects\connect4application\computer.bmp");
-            empty = Image.FromFile(@"c:\users\andy4\documents\visual studio 2017\Projects\connect4application\empty.bmp");
+            player = Image.FromFile(@".\..\..\..\player.bmp");
+            computer = Image.FromFile(@".\..\..\..\computer.bmp");
+            empty = Image.FromFile(@".\..\..\..\empty.bmp");
             DrawMap();
         }
 
